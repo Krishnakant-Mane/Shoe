@@ -20,7 +20,7 @@ export const ViewProduct = () => {
     const thumbnails = Object.values(product.productImages).filter(img => img !== "");
 
     return (
-        <div className="flex flex-col md:flex-row gap-10 p-10 md:pt-25 max-w-7xl mx-auto">
+        <div className="flex flex-col md:flex-row gap-10 p-10 md:pt-25 pt-52 max-w-7xl mx-auto">
             
             {/* LEFT SIDE: Image Gallery */}
             <div className="flex flex-col-reverse md:flex-row gap-4 flex-1">
