@@ -20,7 +20,7 @@ export const ViewProduct = () => {
     const thumbnails = Object.values(product.productImages).filter(img => img !== "");
 
     return (
-        <div className="flex flex-col md:flex-row gap-10 p-10 md:pt-25 pt-52 max-w-7xl mx-auto">
+        <div className="flex flex-col md:flex-row gap-5 p-10 md:pt-25 pt-25 max-w-7xl mx-auto h-screen">
             
             {/* LEFT SIDE: Image Gallery */}
             <div className="flex flex-col-reverse md:flex-row gap-4 flex-1">
@@ -46,7 +46,7 @@ export const ViewProduct = () => {
                 </div>
 
                 {/* Big Main Image */}
-                <div className="w-full h-[500px] bg-gray-100 rounded-2xl overflow-hidden">
+                <div className="w-full h-[325px] sm:h-[250px] md:h-[500px] lg:h-[500px] bg-gray-100 rounded-2xl overflow-hidden">
                     <img src={mainImg} alt="Product Main" className="w-full h-full object-cover transition-opacity duration-300" />
                 </div>
             </div>
