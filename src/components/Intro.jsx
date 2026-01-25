@@ -61,7 +61,6 @@ export const Intro = () => {
             </div>
 
             <Products />
-            <Home />
             <GenderProduct/>
         </>
     )
