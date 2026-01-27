@@ -9,7 +9,7 @@ export const Products = () => {
             <div id='shopnow' className='flex justify-center w-full md:py-5 md:pt-20 pt-25'>
                 <h1 className='md:text-6xl playfair text-5xl font-semibold'>Our Resources</h1>
             </div>
-            <div className="flex md:flex-wrap justify-center gap-5 md:px-50 md:py-5 py-5  md:h-screen">
+            <div className="flex flex-wrap justify-center gap-5 md:px-50 md:py-5 py-5  md:h-screen">
                 {products.map((item) => (
                     <div key={item.id} className='flex flex-col md:w-120 md:h-170 md:p-5 p-5 rounded-2xl shadow-2xl bg-gray-50 gap-5'>
                         <div>
