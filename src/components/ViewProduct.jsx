@@ -96,7 +96,7 @@ export const ViewProduct = () => {
 
                     <span className='border-1'/>
 
-                    <div className='flex flex-col w-1/2 p-2'>
+                    <div className='flex flex-col md:w-1/2 p-2'>
                         <div>
                             <h1 className='font-bold'>Our Place</h1>
                             <h3 className='playfair'>LUNASTEP</h3>
