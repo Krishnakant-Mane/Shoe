@@ -12,7 +12,7 @@ export const Navbar = () => {
 
                 {/* Brand Identity - Always visible and consistent */}
                 <div className="text-2xl md:text-3xl cursor-pointer font-semibold font-[Playfair_Display] text-black z-60">
-                    LunaStep
+                    <a href="#home">LunaStep</a>
                 </div>
 
                 {/* Desktop Navigation */}

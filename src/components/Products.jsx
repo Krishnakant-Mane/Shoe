@@ -15,7 +15,7 @@ export const Products = () => {
                     {products.map((item) => (
                         <div
                             key={item.id}
-                            className='flex flex-col flex-shrink-0 w-[300px] md:w-[350px] lg:w-[400px] shadow-2xl bg-gray-50 overflow-hidden'
+                            className='flex flex-col flex-shrink-0 w-[350px] md:w-[350px] lg:w-[400px] shadow-2xl bg-gray-50 overflow-hidden'
                         >
                             {/* Image Section */}
                             <div className='h-80 w-full relative group overflow-hidden'>
@@ -40,8 +40,11 @@ export const Products = () => {
                                 </div>
 
                                 <Link to={`/viewproduct/${item.id}`} className='w-full'>
-                                    <button className='w-full border-2 border-black rounded-xl py-3 font-extrabold playfair transition-all duration-300 hover:bg-black hover:text-white cursor-pointer'>
-                                        VIEW PRODUCT
+                                    <button className='group relative w-full border-2 border-black py-3 font-extrabold playfair transition-all duration-300 cursor-pointer overflow-hidden hover:shadow-lg'>
+                                        <span className='absolute inset-0 w-0 bg-black transition-all duration-500 ease-in-out group-hover:w-full'></span>
+                                        <span className='relative z-10 transition-colors duration-500 group-hover:text-white'>
+                                            VIEW PRODUCT
+                                        </span>
                                     </button>
                                 </Link>
                             </div>

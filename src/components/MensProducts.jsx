@@ -10,8 +10,8 @@ export const MensProducts = () => {
 
     return (
         <>
-            <div id='shopnow' className='flex justify-center w-full md:py-5 md:pt-20 pt-25'>
-                <h1 className='md:text-6xl playfair text-5xl font-semibold'>Our Resources</h1>
+            <div id='mens' className='flex justify-center w-full md:py-5 md:pt-20 pt-25'>
+                <h1 className='md:text-6xl playfair text-5xl font-semibold'>KING'S COLLECTION</h1>
             </div>
 
             <div className='w-full overflow-hidden'>
@@ -19,7 +19,7 @@ export const MensProducts = () => {
                     {mensItems.map((item) => (
                         <div
                             key={item.id}
-                            className='flex flex-col flex-shrink-0 w-[300px] md:w-[350px] lg:w-[400px] shadow-2xl bg-gray-50 overflow-hidden mb-5'
+                            className='flex flex-col flex-shrink-0 w-[350px] md:w-[350px] lg:w-[400px] shadow-2xl bg-gray-50 overflow-hidden mb-5'
                         >
                             {/* Image Section */}
                             <div className='h-80 w-full relative group overflow-hidden'>
@@ -46,8 +46,11 @@ export const MensProducts = () => {
                                 </div>
 
                                 <Link to={`/viewproduct/${item.id}`} className='w-full'>
-                                    <button className='w-full border-2 border-black rounded-xl py-3 font-extrabold playfair transition-all duration-300 hover:bg-black hover:text-white cursor-default'>
-                                        VIEW PRODUCT
+                                    <button className='group relative w-full border-2 border-black py-3 font-extrabold playfair transition-all duration-300 cursor-pointer overflow-hidden hover:shadow-lg'>
+                                        <span className='absolute inset-0 w-0 bg-black transition-all duration-500 ease-in-out group-hover:w-full'></span>
+                                        <span className='relative z-10 transition-colors duration-500 group-hover:text-white'>
+                                            VIEW PRODUCT
+                                        </span>
                                     </button>
                                 </Link>
                             </div>

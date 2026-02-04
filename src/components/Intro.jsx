@@ -30,7 +30,7 @@ export const Intro = () => {
 
     return (
         <>
-            <div className="relative w-full h-screen overflow-hidden">
+            <div id='home' className="relative w-full h-screen overflow-hidden">
 
                 {/* Video Background */}
                 <video
