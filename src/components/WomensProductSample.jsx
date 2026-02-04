@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const ProductCard = ({ product, isMobile }) => {
   return (
-    <div className='group w-full md:h-screen h-1/2 border overflow-hidden perspective-1000' style={{ perspective: "1000px" }}>
+    <div className='group w-full md:h-screen h-1/2 overflow-hidden perspective-1000' style={{ perspective: "1000px" }}>
       <motion.div
         className='relative w-full h-full'
         initial={{ rotateY: 0 }}
@@ -55,4 +55,3 @@ export const WomensProductSample = () => {
     </>
   )
 }
-

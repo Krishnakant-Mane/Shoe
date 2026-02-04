@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const navLinks = ['Home', 'Mens', 'Womens', 'Contact'];
+    const navLinks = ['Home', 'Mens', 'Womens'];
 
     return (
         <nav className="fixed top-0 left-0 w-full z-500 backdrop-blur-md bg-white/70 border-b border-gray-100 shadow-sm">
@@ -12,7 +13,7 @@ export const Navbar = () => {
 
                 {/* Brand Identity - Always visible and consistent */}
                 <div className="text-2xl md:text-3xl cursor-pointer font-semibold font-[Playfair_Display] text-black z-60">
-                    <a href="#home">LunaStep</a>
+                    <Link to="/home">LunaStep</Link>
                 </div>
 
                 {/* Desktop Navigation */}
@@ -20,13 +21,17 @@ export const Navbar = () => {
                     {navLinks.map((item) => (
                         <a
                             key={item}
-                            href={`#${item.toLowerCase()}`}
+                            href={`/home/#${item.toLowerCase()} `}
                             className="relative text-[12px] uppercase tracking-[0.25em] text-[#2E2E2E] font-medium group transition-colors duration-300 hover:text-black"
                         >
                             {item}
                             <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-black transition-all duration-500 group-hover:w-full"></span>
                         </a>
                     ))}
+                    <Link to="/contacts" className="relative text-[12px] uppercase tracking-[0.25em] text-[#2E2E2E] font-medium group transition-colors duration-300 hover:text-black">
+                        Contacts
+                        <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-black transition-all duration-500 group-hover:w-full"></span>
+                    </Link>
                 </div>
 
                 {/* Hamburger Button - Higher Z-index to stay above overlay */}

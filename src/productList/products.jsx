@@ -3,7 +3,7 @@ export const products = [
         
         id: 1,
         productName: "Shoe",
-        productDescription: "This is a sample",
+        productDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
         productGender: "Male",
         productCategory: "Sandals",
         productPrice: 999,

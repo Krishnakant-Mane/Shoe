@@ -31,7 +31,7 @@ export const ViewProduct = () => {
                     <img
                         src={product.productImage}
                         onClick={() => setMainImg(product.productImage)}
-                        className={`w-20 h-20 object-cover rounded-md cursor-pointer border-2 ${mainImg === product.productImage ? 'border-black' : 'border-transparent'}`}
+                        className={`w-20 h-20 object-cover  cursor-pointer border-2 ${mainImg === product.productImage ? 'border-black' : 'border-transparent'}`}
                     />
 
                     {thumbnails.map((imgUrl, index) => (
@@ -39,14 +39,14 @@ export const ViewProduct = () => {
                             key={index}
                             src={imgUrl}
                             alt={`Thumbnail ${index}`}
-                            className={`w-20 h-20 object-cover rounded-md cursor-pointer border-2 transition-all ${mainImg === imgUrl ? 'border-black' : 'border-transparent'}`}
+                            className={`w-20 h-20 object-cover cursor-pointer border-2 transition-all ${mainImg === imgUrl ? 'border-black' : 'border-transparent'}`}
                             onClick={() => setMainImg(imgUrl)}
                         />
                     ))}
                 </div>
 
                 {/* Big Main Image */}
-                <div className="w-full h-[325px] sm:h-[250px] md:h-[500px] lg:h-[500px] bg-gray-100 rounded-2xl overflow-hidden">
+                <div className="w-full h-[325px] sm:h-[250px] md:h-[500px] lg:h-[500px] bg-gray-100 overflow-hidden">
                     <img src={mainImg} alt="Product Main" className="w-full h-full object-cover transition-opacity duration-300" />
                 </div>
             </div>
@@ -62,11 +62,14 @@ export const ViewProduct = () => {
                     <h2 className="text-xl line-through text-gray-400 playfair">Rs. {product.productMRP}</h2>
                 </div>
 
-                <button className="bg-black md:text-2xl text-white py-2 rounded-2xl font-semibold playfair hover:bg-gray-800 transition-colors mt-5 hover:cursor-pointer">
-                    Order {product.productCategory} Now
+                <button className='group relative w-full border-2 border-black py-3 font-extrabold playfair transition-all duration-300 cursor-pointer overflow-hidden hover:shadow-lg'>
+                    <span className='absolute inset-0 w-0 bg-black transition-all duration-500 ease-in-out group-hover:w-full'></span>
+                    <span className='relative z-10 transition-colors duration-500 group-hover:text-white'>
+                        ORDER NOW {product.productCategory.toUpperCase()}
+                    </span>
                 </button>
 
-                <div className='flex md:flex-row flex-col w-full shadow-2xl card justify-between rounded-2xl'>
+                <div className='flex md:flex-row flex-col w-full shadow-2xl card justify-between'>
                     <div className='flex flex-col md:w-1/2 p-2'>
                         <div>
                             <h1 className='font-bold'>Other Places</h1>
