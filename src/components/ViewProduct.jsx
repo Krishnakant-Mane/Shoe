@@ -20,7 +20,7 @@ export const ViewProduct = () => {
     const thumbnails = Object.values(product.productImages).filter(img => img !== "");
 
     return (
-        <div className="flex flex-col md:flex-row gap-5 p-10 md:pt-25 pt-25 max-w-7xl mx-auto h-screen">
+        <div className="flex flex-col md:flex-row gap-5 p-10 md:pt-25 pt-25 max-w-7xl mx-auto min-h-screen">
 
             {/* LEFT SIDE: Image Gallery */}
             <div className="flex flex-col-reverse md:flex-row gap-4 flex-1">
@@ -67,7 +67,7 @@ export const ViewProduct = () => {
                 </button>
 
                 <div className='flex md:flex-row flex-col w-full shadow-2xl card justify-between rounded-2xl'>
-                    <div className='flex flex-col md:w-1/2 p-2'> 
+                    <div className='flex flex-col md:w-1/2 p-2'>
                         <div>
                             <h1 className='font-bold'>Other Places</h1>
                             <h3 className='playfair'>DADAR, KURLA</h3>
@@ -94,7 +94,7 @@ export const ViewProduct = () => {
                         </div>
                     </div>
 
-                    <span className='border-1'/>
+                    <span className='border-1' />
 
                     <div className='flex flex-col md:w-1/2 p-2'>
                         <div>
