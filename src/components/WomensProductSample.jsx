@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { WomenSample } from '../productList/WomenSample';
 import { motion } from "framer-motion";
-
+import { products } from '../productList/products';
 const ProductCard = ({ product, isMobile }) => {
   return (
     <div className='group w-full md:h-screen h-1/2 overflow-hidden perspective-1000' style={{ perspective: "1000px" }}>
@@ -17,7 +17,7 @@ const ProductCard = ({ product, isMobile }) => {
           className='absolute w-full h-full'
           style={{ backfaceVisibility: "hidden" }}
         >
-          <img src={product.src} alt="" className='w-full h-full object-cover' />
+          <img className='w-full h-full object-cover' src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
         </div>
 
         {/* Back Side */}

@@ -7,6 +7,7 @@ import { ViewProduct } from "./components/ViewProduct"
 import { MensProducts } from "./components/MensProducts"
 import { WomenProducts } from "./components/WomenProducts"
 import { Contacts } from "./components/Contacts"
+import { Signup } from "./components/Signup"
 gsap.registerPlugin(ScrollTrigger)
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="mens" element={<MensProducts/>} />
           <Route path="womens" element={<WomenProducts/>} />
           <Route path="contacts" element={<Contacts/>} />
+          <Route path="signup" element={<Signup/>} />
         </Route>
       </Routes>
     </>
