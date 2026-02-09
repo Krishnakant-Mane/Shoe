@@ -1,13 +1,7 @@
 import React, { useEffect } from 'react'
-import { Home } from './Home'
 import home from '../assets/Home.mp4'
 import gsap from 'gsap'
 import { Products } from './Products'
-import { GenderProduct } from './GenderProduct'
-import { MensProductSample } from './MensProductSample'
-import { WomensProductSample } from './WomensProductSample'
-import { MensProducts } from './MensProducts'
-import { WomenProducts } from './WomenProducts'
 
 
 export const Intro = () => {
@@ -64,13 +58,7 @@ export const Intro = () => {
                 </div>
 
             </div>
-
-            <Products />
-            <GenderProduct/> {/*GenderProduct 3D model*/}
-            <MensProductSample/>
-            <MensProducts/>
-            <WomensProductSample/>
-            <WomenProducts/>
+            <Products/>
         </>
     )
 }
