@@ -9,6 +9,8 @@ import { Products } from "./components/Products"
 import { AuthProvider } from "./context/AuthContext"
 import CartProvider from "./context/CartProvider"
 import { ProductProvider } from "./context/ProductContext"
+import { Carts } from "./components/Carts"
+import { ViewProduct } from "./components/ViewProduct"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -23,9 +25,10 @@ function App() {
               <Route index element={<Intro />} />
               <Route path="home" element={<Intro />} />
               <Route path="products" element={<Products />} />
-              <Route path="products/:keyword" element={<Products />} />
+              <Route path="products/:id" element={<ViewProduct />} />
               <Route path="contacts" element={<Contacts />} />
               <Route path="signup" element={<Signup />} />
+              <Route path="carts" element={<Carts />} />
             </Route>
           </Routes>
         </ProductProvider>

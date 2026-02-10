@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import home from '../assets/Home.mp4'
 import gsap from 'gsap'
-import { Products } from './Products'
+import { Hero } from './Hero'
 
 
 export const Intro = () => {
@@ -58,7 +58,7 @@ export const Intro = () => {
                 </div>
 
             </div>
-            <Products/>
+            <Hero />
         </>
     )
 }
