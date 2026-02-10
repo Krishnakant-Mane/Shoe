@@ -74,11 +74,11 @@ export const Hero = () => {
                         transition={{ delay: 0.8 }}
                         className="flex flex-col sm:flex-row gap-6 items-center z-10"
                     >
-                        <a href="#products" >
+                        <Link to="/products" >
                             <button className="hover:cursor-pointer bg-[#1A1A90] text-white px-10 py-4 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-blue-800 hover:scale-105 hover:shadow-xl transition-all flex items-center gap-3 shadow-lg shadow-blue-900/20">
                                 Shop LunaStep Air <ArrowRight size={18} />
                             </button>
-                        </a>
+                        </Link>
                         <button
                             onClick={() => setIsVideoOpen(true)}
                             className="bg-white text-black border border-gray-200 px-10 py-4 rounded-full font-bold text-sm tracking-widest uppercase hover:border-black hover:bg-gray-50 transition-all flex items-center gap-2 cursor-pointer"

@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Play, Pause, Volume2, VolumeX, Maximize, Settings, X, Minimize } from 'lucide-react';
 import { motion } from 'framer-motion';
+import demo from '../assets/demo.mp4';
 
 export const VideoPlayer = ({ onClose }) => {
     const videoRef = useRef(null);
@@ -13,7 +14,7 @@ export const VideoPlayer = ({ onClose }) => {
     const [showControls, setShowControls] = useState(true);
 
     // Sample video URL
-    const videoSrc = "https://videos.pexels.com/video-files/3756003/3756003-uhd_2560_1440_25fps.mp4";
+    const videoSrc = demo;
 
     useEffect(() => {
         const video = videoRef.current;

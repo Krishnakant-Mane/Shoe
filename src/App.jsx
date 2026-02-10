@@ -11,6 +11,7 @@ import CartProvider from "./context/CartProvider"
 import { ProductProvider } from "./context/ProductContext"
 import { Carts } from "./components/Carts"
 import { ViewProduct } from "./components/ViewProduct"
+import ScrollToTop from "./components/ScrollToTop"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -20,6 +21,7 @@ function App() {
     <AuthProvider>
       <CartProvider>
         <ProductProvider>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Layout />} >
               <Route index element={<Intro />} />
